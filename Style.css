@@ -46,7 +46,7 @@ body {
 }
 
 a.pdf {
-    background: url(img/ic_pdf.png) right no-repeat;
+    background: url(ic_pdf.png) right no-repeat;
     padding-right: 25px;
 }
 
@@ -68,7 +68,7 @@ a.pdf {
 }
 
 #header{
-    background-image:url(img/headimg.jpg);
+    background-image:url(headimg.jpg);
     border-left:solid #be1309 4px;
     border-top:solid #be1309 4px;
     height:240px;
