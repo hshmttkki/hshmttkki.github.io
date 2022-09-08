@@ -1,449 +1,338 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_JIS"/>
-    <link href="Style.css" rel="stylesheet" />
-    <title>Website of #TAK</title>
-    <meta name="description" content="Website of Tak Hashimoto"/>
-    <meta name="keywords" content="橋本,剛明,社会心理学,東京大学,京都大学,霊長類研究所,Takaaki,Hashimoto,Social,Psychology,University of Tokyo,Kyoto University,Primate Research Institute"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
+h1{
+    font-size:200%;
+    letter-spacing:5px;
+    padding:10px;
+    margin:3px;
+    line-height:10px;
+    color:white;
+    text-shadow:1px 1px 3px black;
+}
 
-<body>
+h2{
+    font-size:100%;
+    line-height:0px;
+    padding:3px 3px;
+    color:#000;
+    margin-left:5px;
+}
 
-    <div id="contents" >
+h3{
+    font-size:75%;
+    line-height:5px;
+    padding:0 3px;
+    margin-left:5px;
+    color:#000;
+    font-weight:normal;
+}
 
-        <div id="topmargin">
-            <a href="index.html" target="_top">日本語</a>
-        </div>
+h4{
+    font-size:90%;
+    line-height:5px;
+    padding:0 3px;
+    margin-left:5px;
+    margin-bottom:5px;
+    color:#000;
+    font-weight:normal;
+}
 
-        <div id="header">
-            <h1><a href="eng.html" target="_top">#TAK socialpsychology</a></h1>
-        </div>
+body {
+    height:100%;
+    background-color:#fefbfb;
+    background-repeat:repeat;
+    font-family:'メイリオ',Meiryo,'MS Gothic',sans-serif;
+    color:#000;
+    margin:0;
+    padding:0;
+}
 
-        <div id="inner">
-            <div id="side">
-                <img src="img/topphoto.jpg" alt="picture_of_me" class="topimg">
-                <h2 style="font-weight:normal">HASHIMOTO, Takaaki</h2>
-                <h2 style="font-weight:normal">PhD</h2><hr />
-                <h4>Associate Professor</h4>
-				<h4>Faculty of Sociology</h4>
-                <h4>Toyo University</h4>
-                <br>
-                <h3>Speciality: Social Psychology</h3><hr />
-                <br />
-                <h3>Click <a href="CV_Hashimoto.pdf" target="_blank">HERE</a> for CV.</h3>
-                <br />
-                <h3>E-mail:</h3><h3>hshmtsp (at) gmail.com</h3>
-            </div>
+a.pdf {
+    background: url(img/ic_pdf.png) right no-repeat;
+    padding-right: 25px;
+}
 
-            <div id="main">
+#contents {
+    width: 870px;
+    height: auto;
+    min-height: 1000px; /*最小の高さを指定*/
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    font-size: 80%;
+    padding-top: 5px;
+    overflow: hidden; /*サイドバーのはみ出した領域を非表示に*/
+}
 
-                <h2>Education and Career Track</h2>
-                <div class="tbl">
-                    <table>
-                        <tr>
-                            <th class="t_top">April 2021 -</th>
-                            <td class="t_top">Associate Professor<br />Department of Social Psychology, Faculty of Sociology, Toyo University</td>
-                        </tr>
-                        <tr>
-                            <th>April 2017 - March 2021</th>
-                            <td>Assistant Professor<br />Department of Social Psychology, Graduate School of Humanities and Sociology, The University of Tokyo</td>
-                        </tr>
-                        <tr>
-                            <th>October 2016 - March 2017</th>
-                            <td>Project Assistant Professor<br />Department of Social Psychology, Graduate School of Humanities and Sociology, The University of Tokyo</td>
-                        </tr>
-                        <tr>
-                            <th>May 2015 - September 2016</th>
-                            <td>Research Fellow, Primate Research Institute, Kyoto University</td>
-                        </tr>
-                        <tr>
-                            <th>April 2015</th>
-                            <td>PhD, Social Psychology, The University of Tokyo</td>
-                        </tr>
-                        <tr>
-                            <th>April 2010 - March 2013</th>
-                            <td>Research Fellow (DC1), Japan Society for the Promotion of Science</td>
-                        </tr>
-                        <tr>
-                            <th>March 2010</th>
-                            <td>MA, The University of Tokyo</td>
-                        </tr>
-                        <tr>
-                            <th>March 2008</th>
-                            <td>BA, International Christian University</td>
-                        </tr>
-                    </table>
-                </div>
-                <br /><br />
+/*ウィンドウ幅が869pxまでの場合に適用するCSS*/
+@media screen and (max-width:869px){
+#contents{ width:100% }
+}
+
+#header{
+    background-image:url(img/headimg.jpg);
+    border-left:solid #be1309 4px;
+    border-top:solid #be1309 4px;
+    height:290px;
+    margin:0 5px;
+}
+
+#header a{
+    color:white;
+    text-shadow:1px 1px 3px black;
+    text-decoration:none;
+    position: absolute;
+    left: 50%;    
+}
+
+#navbar{
+    border-top:solid #e3e3e3;
+    border-bottom:solid #e3e3e3;
+    height:40px;
+    position:relative;
+    top:10px;
+    overflow:hidden;
+}
+
+#navbar ul{
+    /*position:relative;
+    left:50%;*/
+    float:left;
+    list-style:none;
+    padding:0 5px;
+    margin:8px 0 0 0;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:20px;
+    letter-spacing:2px;
+}
+
+#navbar li{
+    float:left;
+    /*position:relative;
+    left:-50%;*/
+    margin: 0 10px;
+    padding:0 20px; 
+    width:80px;
+    text-align:center;
+    border-bottom:solid #be1309;
+}
+
+#navbar a{
+    color:#3300cc;
+    display:block;
+    text-decoration:none;
+}
+
+#navbar li:hover{background-color:#e3e3e3;border-bottom:solid #000;}
+
+#navbar a:hover{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/*outer-spacing*/
+#inner{height:300px;margin:20px 5px;}
+
+/*Top-margin*/
+#topmargin{
+    padding: 0 2%;
+    text-align:right;
+}
+#topmargin a{
+    font-size:120%;
+    text-decoration:none;
+}
 
 
-                <h2>Research Interests</h2>
-                <div class="tbl">
-                    <table>
-                        <tr>
-                            <th class="t_top">Keywords</th>
-                            <td class="t_top">
-                                Moral Judgment and Behavior <br/>Behavioral/Emotional Regulation <br/>Mind Perception <br/>Retribution/Forgiveness <br/>Social Power
-                            </td>
-                        </tr>                        
-                    </table>
-                </div>
-                <br /><br />
+/*main-space*/
+#main{
+    width:635px;
+    height:auto;
+    float:right;
+    padding:5px 5px;
+}
 
-                <h2>Peer-reviewed Publications</h2>
-                <div class="numbering">
-                    <table>
-                        <tr>
-                            <th class="num_top">&nbsp;</th>
-                            <td class="t_top">Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (in press). The relationship between disease avoidance and attitudes toward older people. <i>Advances in Gerontology</i>.</td>
-                            <td class="t_top" style="padding: 2px 10px;"><a target="_blank" href=""></a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., Osaki, S., <u>Hashimoto, T.</u>, & Karasawa, K. (2022). Social acceptance of smart city projects: Focus on the Sidewalk Toronto case. <i>Frontiers in Environmental Science</i>, 10:898922. https://doi.org/10.3389/fenvs.2022.898922</td>
-                            <td><a target="_blank" href="https://doi.org/10.3389/fenvs.2022.898922">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., Ishizuna, A., Osaki, S., <u>Hashimoto, T.</u>, Tai, M., Tanibe, T., & Karasawa, K. (in press). The social acceptance of smart health services in Japan. <i>International Journal of Environmental Research and Public Health</i>, <i>19</i>(3), 1298. https://doi.org/10.3390/ijerph19031298</td>
-                            <td><a target="_blank" href="https://doi.org/10.3390/ijerph19031298">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (2022). Decreasing anti-elderly discriminatory attitudes: Conducting a 'Stereotype Embodiment Theory'-based intervention. <i>European Journal of Social Psychology</i>, <i>52</i>(1), 174-190.. https://doi.org/10.1002/ejsp.2823</td>
-                            <td><a target="_blank" href="https://doi.org/10.1002/ejsp.2823">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (2022). Influence of contact experience and germ aversion on negative attitudes toward older adults: Role of youth identity. <i>Frontiers in Psychology</i>, 13:829742. https://doi.org/10.3389/fpsyg.2022.829742</td>
-                            <td><a target="_blank" href="https://doi.org/10.3389/fpsyg.2022.829742">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num" ">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, & Karasawa, K. (2022). Are the powerful retributive, forgiving, or both? Moderating role of power on people’s responses to norm-violation. <i>Asian Journal of Social Psychology</i>, <i>25</i>(3), 391-405. https://doi.org/10.1111/ajsp.12501</td>
-                            <td><a target="_blank" href="https://doi.org/10.1111/ajsp.12501">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2022). Social rewards in the volunteer’s dilemma in everyday life. <i>Asian Journal of Social Psychology</i>, <i>25</i>(1), 117-125. https://doi.org/10.1111/ajsp.12472</td>
-                            <td><a target="_blank" href="https://doi.org/10.1111/ajsp.12472">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2022). The development of a Japanese Version of the Symbolic Ableism Scale (SAS-J). <i>The Japanese Journal of Psychology</i>, <i>92</i>(6), 532-542. https://doi.org/10.4992/jjpsy.92.20208</td>
-                            <td><a target="_blank" href="https://doi.org/10.4992/jjpsy.92.20208">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., Osaki, S., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). How do people view various kinds of Smart City services? Focus on the acquisition of personal information. <i>Sustainability</i>, <i>13</i>(19), 11062. https://doi.org/10.3390/su131911062</td>
-                            <td><a target="_blank" href="https://doi.org/10.3390/su131911062">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). Underlying dimensions of benefit and risk perception and their effects on people’s acceptance of conditionally/fully automated vehicles. <i>Transportation</i>. https://doi.org/10.1007/s11116-021-10225-0</td>
-                            <td><a target="_blank" href="https://doi.org/10.1007/s11116-021-10225-0">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). Who incurs a cost for their group and when? The effects of dispositional and situational factors regarding equality in the volunteer's dilemma. <i>Personality and Individual Differences</i>, <i>185</i>: 111236. https://doi.org/10.1016/j.paid.2021.111236</td>
-                            <td><a target="_blank" href="https://doi.org/10.1016/j.paid.2021.111236">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., Osaki, S., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). The social acceptance of collecting and utilizing personal information in smart cities. <i>Sustainability</i>, <i>13</i>(16), 9146. https://doi.org/10.3390/su13169146</td>
-                            <td><a target="_blank" href="https://doi.org/10.3390/su13169146">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). General cognition of various mental illnesses: Focusing on the Stereotype Content Model. <i>Japanese Journal of Social Psychology</i>, <i>37</i>(1), 36-42. https://doi.org/10.14966/jssp.2012 (in Japanese)</td>
-                            <td><a target="_blank" href="https://doi.org/10.14966/jssp.2012">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). The complementation of the stereotype embodiment theory: Focusing on the social identity theory. <i>Journal of Human Environmental Studies</i>, <i>19</i>(1), 9-14. https://doi.org/10.4189/shes.19.9 (in Japanese)</td>
-                            <td><a target="_blank" href="https://doi.org/10.4189/shes.19.9">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). The effect of impression formation on rejection in the ultimatum game. <i>Letters on Evolutionary Bahavioral Science</i>, <i>12</i>(1), 12-17. https://doi.org/10.5178/lebs.2021.83</td>
-                            <td><a target="_blank" href="https://doi.org/10.5178/lebs.2021.83">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Shimizu, Y., <u>Hashimoto, T.</u>, & Karasawa, K. (2021). The effect of labeling of gambling disorder on negative attitudes. <i>Cognitive Studies: Bulletin of the Japanese Cognitive Science Society</i>, <i>28</i>(1), 161-167. https://doi.org/10.11225/cs.2020.063 (in Japanese)</td>
-                            <td><a target="_blank" href="https://doi.org/10.11225/cs.2020.063">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, Schmitt, M., & Karasawa, K. (2019). Development of a Japanese version of the Justice Sensitivity Inventory (JSI-J). <i>The Japanese Journal of Psychology</i>, <i>90</i>(5), 503-512. https://doi.org/10.4992/jjpsy.90.18234</td>
-                            <td><a target="_blank" href="https://doi.org/10.4992/jjpsy.90.18234">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hannikainen, I. R., Machery, E., Rose, D., Stich, S., Olivola, C. Y., Sousa, P., Cova, F., Buchtel, E. E., Alai, M., Angelucci, A., Berniunas, R., Chatterjee, A., Cheon, H., Cho, I.-R., Cohnitz, D., Dranseika, V., Erana Lagos, A., Ghadakpour, L., Grinberg, M., <u>Hashimoto, T.</u>, Horowitz, A., Hristova, E., Jraissati, Y., Kadreva, V., Karasawa, K., Kim, H., Kim, Y., Lee, M., Mauro, C., Mizumoto, M., Moruzzi, S., Ornelas, J., Osimani, B., Romero, C., Rosas Lopez, A., Sangoi, M., Sereni, A., Songhorian, S., Struchiner, N., Tripodi, V., Usui, N., Vazquez del Mercado, A., Vosgerichian, H. A., Zhang, X., & Zhu, J. (2019). For whom does determinism undermine moral responsibility? Surveying the conditions for free will across cultures. <i>Frontiers in Psychology</i>, <i>10</i>: 2428. https://doi.org/10.3389/fpsyg.2019.02428</td>
-                            <td><a target="_blank" href="https://doi.org/10.3389/fpsyg.2019.02428">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Fukumoto, M., <u>Hashimoto, T.</u>, & Karasawa, K. (2019). Perspective-taking mediates the effect of Victims’ personalities on forgiveness. <i>Journal of Human Environmental Studies</i>, <i>17</i>(1), 17-24. https://doi.org/10.4189/shes.17.17 (in Japanese)</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/shes/17/1/17_17/_article/-char/en">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tham, Y. J., <u>Hashimoto, T.</u>, & Karasawa, K. (2019). The positive and negative effects of justice sensitivity and justice-related emotions in the volunteer's dilemma. <i>Personality and Individual Differences</i>, <i>151</i>: 109501. https://doi.org/10.1016/j.paid.2019.07.011</td>
-                            <td><a target="_blank" href="https://doi.org/10.1016/j.paid.2019.07.011">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tanibe, T., <u>Hashimoto, T.</u>, Tomabechi, T., Masamoto, T., & Karasawa, K. (2019). Attributing mind to groups and their members on two dimensions. <i>Frontiers in Psychology</i>, <i>10</i>: 840. http://dx.doi.org/10.3389/fpsyg.2019.00840</td>
-                            <td><a target="_blank" href="https://doi.org/10.3389/fpsyg.2019.00840">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Cova, F., Olivola, C. Y., Machery, E., Stich, S., Rose, D., Alai, M., Angelucci, A., Berni?nas, R., Buchtel, E. E., Chatterjee, A., Cheon, H., Cho, I.-R., Cohnitz, D., Dranseika, V., Lagos, A. E., Ghadakpour, L., Grinberg, M., Hannikainen, I., <u>Hashimoto, T.</u>, Horowitz, A., Hristova, E., Jraissati, Y., Kadreva, V., Karasawa, K., Kim, H., Kim, Y., Lee, M., Mauro, C., Mizumoto, M., Moruzzi, S., Ornelas, J., Osimani, B., Romero, C., Rosas Lopez, A., Sangoi, M., Sereni, A., Songhorian, S., Sousa, P., Struchiner, N., Tripodi, V., Usui, N., Vazquez del Mercado, A., Volpe, G., Vosgerichian, H. A., Zhang, X., & Zhu, J. (2018). De pulchritudine non est disputandum? A cross-cultural investigation of the alleged intersubjective validity of aesthetic judgment. <i>Mind & Language</i>, 1-22. https://doi.org/10.1111/mila.12210</td>
-                            <td><a target="_blank" href="https://doi.org/10.1111/mila.12210">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, Karasawa, K., Hirayama, K., Wada, M., & Hosaka, H. (2018). Community proactivity in disaster preparation: Research based on two communities in Japan. <i>Journal of Disaster Research</i>, <i>13</i>(4), 755-766. http://dx.doi.org/10.20965/jdr.2018.p0755</td>
-                            <td><a target="_blank" href="http://dx.doi.org/10.20965/jdr.2018.p0755">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, & Karasawa, K. (2018). Impact of consumer power on consumers' reactions to corporate transgression. <i>PLoS ONE</i>, <i>13</i>(5): e0196819. https://doi.org/10.1371/journal.pone.0196819</td>
-                            <td><a target="_blank" href="https://doi.org/10.1371/journal.pone.0196819">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Rose, D., Machery, E., Stich, S., Alai, M., Angelucci, A., Berni?nas, R., Buchtel, E. E., Chatterjee, A., Cheon, H., Cho, I.-R., Cohnitz, D., Cova, F., Dranseika, V., Lagos, A. E., Ghadakpour, L., Grinberg, M., Hannikainen, I., <u>Hashimoto, T.</u>, Horowitz, A., Hristova, E., Jraissati, Y., Kadreva, V., Karasawa, K., Kim, H., Kim, Y., Lee, M., Mauro, C., Mizumoto, M., Moruzzi, S., Olivola, C. Y., Ornelas, J., Osimani, B., Romero, C., Rosas Lopez, A., Sangoi, M., Sereni, A., Songhorian, S., Sousa, P., Struchiner, N., Tripodi, V., Usui, N., Vazquez del Mercado, A., Volpe, G., Vosgerichian, H. A., Zhang, X., & Zhu, J. (2017). Nothing at stake in knowledge. <i>Nous</i>, 1-24. https://doi.org/10.1111/nous.12211</td>
-                            <td><a target="_blank" href="https://doi.org/10.1111/nous.12211">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Machery, E., Stich, S., Rose, D., Alai, M., Angelucci, A., Berni?nas, R., Buchtel, E. E., Chatterjee, A., Cheon, H., Cho, I.-R., Cohnitz, D., Cova, F., Dranseika, V., Lagos, A. E., Ghadakpour, L., Grinberg, M., Hannikainen, I., <u>Hashimoto, T.</u>, Horowitz, A., Hristova, E., Jraissati, Y., Kadreva, V., Karasawa, K., Kim, H., Kim, Y., Lee, M., Mauro, C., Mizumoto, M., Moruzzi, S., Olivola, C. Y., Ornelas, J., Osimani, B., Romero, C., Lopez, A. R., Sangoi, M., Sereni, A., Songhorian, S., Sousa, P., Struchiner, N., Tripodi, V., Usui, N., del Mercado, A. V., Volpe, G., Vosgerichian, H. A., Zhang, X., & Zhu, J. (2017). The Gettier Intuition from South America to Asia. <i>Journal of Indian Council of Philosophical Research</i>, <i>34</i>(3), 517-541. https://doi.org/10.1007/s40961-017-0113-y</td>
-                            <td><a target="_blank" href="https://doi.org/10.1007/s40961-017-0113-y">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Rose, D., Machery, E., Stich, S., Alai, M., Angelucci, A., Berni?nas, R., Buchtel, E. E., Chatterjee, A., Cheon, H., Cho, I.-R., Cohnitz, D., Cova, F., Dranseika, V., Lagos, A. E., Ghadakpour, L., Grinberg, M., Hannikainen, I., <u>Hashimoto, T.</u>, Horowitz, A., Hristova, E., Jraissati, Y., Kadreva, V., Karasawa, K., Kim, H., Kim, Y., Lee, M., Mauro, C., Mizumoto, M., Moruzzi, S., Olivola, C. Y., Ornelas, J., Osimani, B., Romero, C., Rosas, A., Sangoi, M., Sereni, A., Songhorian, S., Sousa, P., Struchiner, N., Tripodi, V., Usui, N., del Mercado, A. V., Volpe, G., Vosgerichian, H. A., Zhang, X., & Zhu, J. (2017). Behavioral circumscription and the folk psychology of belief: A study in ethno-mentalizing. <i>Thought: A Journal of Philosophy</i>, <i>6</i>(3), 193-203. https://doi.org/10.1002/tht3.248</td>
-                            <td><a target="_blank" href="https://doi.org/10.1002/tht3.248">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tanibe, T., <u>Hashimoto, T.</u>, & Karasawa, K. (2017). We perceive a mind in a robot when we help it. <i>PLoS ONE</i>, <i>12</i>(7): e0180952. https://doi.org/10.1371/journal.pone.0180952</td>
-                            <td><a target="_blank" href="https://doi.org/10.1371/journal.pone.0180952">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Fukumoto, M., Tomabechi, T., <u>Hashimoto, T.</u>, & Karasawa, K. (2017). The effect of free will belief on aggression in social interactive situations. <i>Journal of Human Environmental Studies</i>, <i>15</i>(1), 73-80. https://doi.org/10.4189/shes.15.73 (in Japanese)</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/shes/15/1/15_73/_article/-char/en">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, & Karasawa, K. (2016). When and by whom are apologies considered? The effects of relationship and victim/observer standing on Japanese people’s forgiveness. <i>Interpersona: An International Journal on Personal Relationships</i>, <i>10</i>(2), 171-185. https://doi.org/10.5964/ijpr.v10i2.214</td>
-                            <td><a target="_blank" href="https://doi.org/10.5964/ijpr.v10i2.214">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Machery, E., Stich, S., Rose, D., Chatterjee, A., Karasawa, K., Struchiner, N., Sirker, S., Usui, N., & <u>Hashimoto, T.</u> (2015). Gettier across cultures. <i>Nous</i>, <i>51</i>(3), 1-20. https://doi.org/10.1111/nous.12110 </td>
-                            <td><a target="_blank" href="https://doi.org/10.1111/nous.12110 ">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, & Karasawa, K. (2014). Science, so close and yet so far away: How people view science, science subjects and scientists. In Y. Suzuki & M. Hagiya (Eds.), <i>Recent Advances in Natural Computing</i> (pp.57-67). Tokyo: Springer. https://doi.org/10.1007/978-4-431-55105-8_4</td>
-                            <td><a target="_blank" href="https://doi.org/10.1007/978-4-431-55105-8_4">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, Shiraiwa, Y. , & Karasawa, K. (2012). People's attitudes toward income inequality policies: How perceptions of opportunity and social class affect responsibility attribution. <i>Japanese Journal of Social Psychology</i>，<i>28</i>(1)，13-23. https://doi.org/10.14966/jssp.KJ00008195839 (in Japanese)</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/jssp/28/1/28_KJ00008195839/_article/-char/en">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, & Karasawa, K. (2012). Victim and observer asymmetries in their reactions to an apology: How responsibility attribution and emotional empathy lead to forgiveness. <i>Japanese Journal of Experimental Social Psychology</i>, <i>51</i>(2), 104-117. https://doi.org/10.2130/jjesp.51.104</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/jjesp/51/2/51_2_104/_article/-char/en">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Tsukimoto, T., <u>Hashimoto, T.</u>, & Karasawa, K. (2012). False memories based on indirect associations of gender stereotypes of occupations. <i>The Japanese Journal of Psychology</i>, <i>82</i>(1),49-55. https://doi.org/10.4992/jjpsy.82.49 (in Japanese)</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/jjpsy/82/1/82_1_49/_article/-char/en">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td><u>Hashimoto, T.</u>, Karasawa, K., & Isozaki, M. (2010). A model of commitment to college student clubs: From a semi-organizational perspective. <i>Japanese Journal of Experimental Social Psychology</i>, <i>50</i>(1), 76-88. https://doi.org/10.2130/jjesp.50.76 (in Japanese)</td>
-                            <td><a target="_blank" href="https://www.jstage.jst.go.jp/article/jjesp/50/1/50_1_76/_article/-char/en">JUMP</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <br /><br />
+/*table*/
+.tbl{margin:0 5px;}
+table{border-collapse:collapse;width:100%;font-size:95%;}
+th.t_top{
+    border-top:#be1309 3px solid;
+}
+th {
+	border-bottom: #e3e3e3 2px dotted;
+	text-align: left;
+	padding:2px 10px 2px 2px;
+	font-weight: normal;
+}
+td.t_top {
+	border-top: #808080 3px solid;
+}
+td {
+	border-bottom: #e3e3e3 2px dotted;
+	text-align: left;
+	padding: 2px;
+}
 
-                <h2>Book Chapters</h2>
-                <div class="numbering">
-                    <table>
-                        <tr>
-                            <th class="num_top">&nbsp;</th>
-                            <td class="t_top">Sink, C. A., McMahan, E. A., Karasawa, K., <u>Hashimoto, T.</u>, & Jung, K. H. (2022).　Positive psychology in South Korea and Japan: Current state of affairs and future potential. In E. C. Chang, C. Downey, H. Yang, I. Zettler, & M. Muyan-Yılık (Eds.), <i>The International Handbook of Positive Psychology</i>. Springer, Cham.</td>
-                            <td class="t_top" style="padding: 2px 10px;"><a target="_blank" href="https://doi.org/10.1007/978-3-030-57354-6_17">JUMP</a></td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Machery, E., Stich, S., Rose, D., Chatterjee, A., Karasawa, K., Struchiner, N., Sirker, S., Usui, N., & <u>Hashimoto, T.</u> (2018). Gettier was framed. In S. Stich, M. Mizumoto, & E. McCready (Eds.), <i>Epistemology for the Rest of the World</i> (pp. 123-148). New York: Oxford University Press. </td>
-                            <td><a target="_blank" href="https://global.oup.com/academic/product/epistemology-for-the-rest-of-the-world-9780190865085">JUMP</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <br /><br />
+.tbl td a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    text-decoration:none;
+}
 
-                <h2>Awards</h2>
-                <div class="tbl">
-                    <table>
-                        <tr>
-                            <th class="t_top">2013</th>
-                            <td class="t_top">
-                                Encouraging Paper Award, The Japanese Society of Social Psychology<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2012</th>
-                            <td>
-                                Distinguished Presentation Award (Poster Divison), The Japanese Group Dynamics Association<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2009</th>
-                            <td>
-                                Distinguished Presentation Award (English Session Divison), The Japanese Group Dynamics Association<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2009</th>
-                            <td>
-                                Young Researcher's Scholarship Award,The Japanese Society of Social Psychology<br />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <br /><br />
+.tbl td a:hover{background-color:#e3e3e3;}
 
-                <h2>Research Grants</h2>
-                <div class="tbl">
-                    <table>
-					    <tr>
-                            <th class="t_top">2018 - 2021</th>
-                            <td class="t_top">
-                                Grant-in-Aid for Young Scientists, Japan Society for the Promotion of Science<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2016 - 2018</th>
-                            <td>
-                                Grant-in-Aid for Young Scientists (B), Japan Society for the Promotion of Science<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2013</th>
-                            <td>
-                                "Fuse" Academic Foundation Research Grant for Young Scholars<br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2010 - 2013</th>
-                            <td>
-                                Grant-in-Aid for JSPS Fellows, Japan Society for the Promotion of Science<br />
-                            </td>
-                    </table>
-                </div>
-                <br /><br />
+/*table with numbering*/
+.numbering{margin:0 5px;counter-reset:num;}
 
-                <h2>Selected Conference Presentations in English</h2>
-                <div class="numbering">
-                    <table>
-                        <tr>
-                            <th class="num_top">&nbsp;</th>
-                            <td class="t_top"><u>Hashimoto, T.</u>, & Karasawa, K. (2021, July). <i>Power and apology affects aggression toward a norm-violator: Analysis using the voodoo doll paradigm.</i> Paper presented at the 14th Biennial Conference of the Asian Association of Social Psychology, Seoul, online. (Presentation on July 31)</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2021, July). <i>Justice beliefs, intervention, and apology affect people’s attitudes toward target of injustice.</i> Paper presented at the 32nd International Congress of Psychology (ICP2020+), Prague, online. (July 18-23)</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2019, Mar). <i>General/personal Just World beliefs as determinants of attitudes toward victim of perpetration</i>. Poster presented at the International Convention of Psychological Science 2019, Paris, France. (Presentation on Mar. 7)</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2019, Feb). <i>Effects of agency on morally instrumental harm: A mouse-tracking investigation</i>. Poster presented at the 2019 Society for Personality and Social Psychology Convention, Portland, Oregon. (Presentation on Feb. 9)</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., Sakurai, R., Shiraiwa, Y., & Karasawa, K. (2017, Aug). <i>Effects of trait self-control on people's decisions toward moral dilemmas</i>. Poster presented at the AASP 2017 Conference, Auckland, New Zealand.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2017, Jan). <i>Mind attribution of "brain-dead" patient influences people's attitudes toward organ transplant</i>. Poster presented at the 2017 Society for Personality and Social Psychology Convention, San Antonio, TX.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T. (2016, July). People's conceptualization of the "mind" and how it works. In K. Karasawa & K. Todayama (Chair), <i>Concept Engineering: A road to proposing a better concept definition</i>. Thematic session conducted at the 31st International Congress of Psychology, Yokohama, Japan.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2015, Feb). <i>How perceived control and justice beliefs affect one's forgiveness toward an unjust other</i>. Poster presented at the 16th Annual Meeting of the Society for Personality and Social Psychology, Long Beach, CA.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., Karasawa, K. (2014, March). <i>The relationship between Just World beliefs and moral decision making</i>. Poster presented at the Cross-Cultural Perspectives on Moral Psychology, Seoul, South Korea.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2013, March). <i>People's images toward science and technology: Review on empirical findings</i>. Paper presented at the 7th International Workshop on Natural Computing, Tokyo, Japan.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2013, January). <i>Role of morality perception in moral typecasting</i>. Poster presented at the 14th Annual Meeting of the Society for Personality and Social Psychology, New Orleans, LA.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2012, January). <i>People's judgments towards organizational predicament and apology: Examination of the effect of perceived power</i>. Poster presented at the 13th Annual Meeting of the Society for Personality and Social Psychology, San Diego, CA.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2011, August). <i>Effectiveness of apology in organizational predicament</i>. Poster presented at the 16th World Congress of the International Society for Criminology, Kobe, Japan.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2010, July). <i>Function of apologies for the victims and the third-parties: Empathy, responsibility attribution, and their antecedents</i>. Paper presented at the meeting of the International Congress of Applied Psychology, Melbourne, Australia.</td>
-                        </tr>
-                        <tr>
-                            <th class="num">&nbsp;</th>
-                            <td>Hashimoto, T., & Karasawa, K. (2009, October). <i>Transgressor apology for the victim and the third-party: Its effects on cognition, emotion, and motivation</i>. Paper presented at the joint meeting of the Japanese Society of Social Psychology and the Japanese Group Dynamics Association, Suita, Japan.</td>
-                        </tr>
-                    </table>
-                </div>
-                <br /><br />
+th.num_top{
+	border-top:#be1309 3px solid;
+    width:2em;
+    counter-increment:num;
+}
 
-            </div>
+.numbering th.num_top:before {content: " " counter(num) ".";}
 
-        </div>
+th.num{width:2em;counter-increment:num;}
+.numbering th.num:before{content:" " counter(num) ".";}
 
-    </div>
-   
-    <address>
-        Copyright (c) 2014 Website of Tak Hashimoto. All Rights Reserved.
-    </address>
+.numbering td a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    text-decoration:none;
+    font-weight:normal;
+}
 
-</body>
-</html>
+.numbering td a:hover{background-color:#e3e3e3;}
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+/*side-space*/
+    #side {
+        width: 205px;
+        float: left;
+        padding: 10px 3px;
+        background-color: #808080;
+        border-left: solid #be1309 4px;
+        padding-bottom: 10000px; /*サイドバーを縦横に延長しcontentsのoverflowで消す*/
+        margin-bottom: -10000px;
+    }
 
-  ga('create', 'UA-49928912-1', 'u-tokyo.ac.jp');
-  ga('send', 'pageview');
+#side h2{color:#ffffff;}
+#side h3{color:#ffffff;font-size:100%;}
+#side h4{color:#ffffff;font-size:90%;}
+#side a{color:white;text-decoration:underline;}
+#side a:hover{color:black;background-color:#e3e3e3;text-decoration:none;cursor:pointer;}
 
-</script>
+/*image*/
+.topimg{display:block;margin:5px auto 20px;}
+
+/*clear指定による左右の割り込みの解除*/
+.clear {clear: both;}
+.clear hr{display:none;}
+
+/*footer*/
+address{
+    font-size:60%;
+    font-style:normal;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:10px;
+    margin:0 auto;
+    margin-top:10px;
+    background-color:#666666;
+    color:#ffffff;
+    width:860px;
+	border-top:solid #be1309 4px;
+}
+
+address a{color:#ff9999;}
+
+/*ウィンドウ幅が869pxまでの場合に適用するCSS*/
+@media screen and (max-width:869px){
+    h1{
+    font-size:150%;
+    letter-spacing:5px;
+    padding:5px;
+    margin:3px;
+    line-height:100%;
+    color:white;
+    text-shadow:1px 1px 3px black;
+    }
+
+    h2{
+    font-size:120%;
+    line-height:100%;
+    }
+
+    #side h2 {font-size:100%;text-align:center;line-height:5px}
+    #side h4 {font-size: 100%; text-align:center}
+    #side h3 {font-size:100%;text-align:center;line-height:0px}
+
+    #header{
+    background-image:none;
+    background-color:cornflowerblue;
+    border-left:solid #be1309 2px;
+    border-right:solid #be1309 2px;
+    border-top:solid #be1309 2px;
+    height:60px;
+    margin:0;
+    }
+
+    #header a{
+    color:white;
+    text-shadow:1px 1px 3px black;
+    text-decoration:none;
+    left: auto;    
+    }
+
+    #inner{height:auto;margin:20px 0px}
+
+    #main{ width:auto; float:none; padding:10px 0 0 0}
+
+    .tbl{margin:0;}
+    table{border-collapse:collapse;width:100%;font-size:100%;}
+    th {font-size:90%; padding:2px 10px 2px 5px}
+    td {font-size:95%; padding:2px 5px 2px 2px}
+
+    #navbar{
+        float:none;
+        height:auto;
+    }
+
+    #navbar ul{
+        margin:0;
+        width:100%;
+        padding:0;
+    }
+
+    #navbar li{
+        float:none;
+        margin: 0;
+        padding:5px 0px; 
+        width:auto;
+        text-align:center;
+        border:solid 1px #be1309;
+        font-size:120%
+    }
+
+    #side {
+        float:none;
+        width: 100%;
+        border-left:solid #be1309 2px;
+        border-right:solid #be1309 2px;
+        padding:1px;
+        margin:0;
+    }
+
+    address{
+    font-size:60%;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin:auto;
+    margin-top:5px;
+    background-color:cornflowerblue;
+    width:auto;
+	border-top:solid #be1309 4px;
+    }
+}
